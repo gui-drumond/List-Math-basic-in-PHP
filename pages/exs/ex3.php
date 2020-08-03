@@ -28,20 +28,24 @@ session_start();
         <h1 class="display-2 text-dark">Bem-Vind@ aos Exercicios Salesianos</h1>
         <h4>Exercicios propostos pelo prof Daniel</h4>
     </div>
-    <div class="container landing">
-        <div class="home-wrap">
-            <form class="form-group display-4"action="../../calcs/calc_1.php" method="POST">
-                    Numero 1:   
-                    <input class="input form-control" name="n1" type="text">
-                    Numero 2:   
-                    <input class="input form-control" name="n2" type="text">
-                    <?php if(isset($_SESSION['resposta']))
-                    {
-                        echo "Resposta :".$_SESSION['resposta']."<br/>";    
-                        unset( $_SESSION['resposta']);                   
-                    }
-                    ?>
-                    <input class="btn btn-success"type="submit" value="Calcular! ">
+    <div class="container">
+       <img class="img-fluid mx-auto d-block col-4" src=" <?php 
+        if(isset($_SESSION['img']))
+        {
+            echo $_SESSION['img'];    
+            unset( $_SESSION['img']);                   
+        }
+        ?>" alt="">
+    </div>
+    <div class="container landing ">
+        <div class="home-wrap ">
+            <form class="form-group" action="../../calcs/calc_3.php" method="POST">
+                    <select name="img" class="form-group form-control">
+                    <option class="input mh-50 form-control" value="1"> Imagens 1 </option>
+                    <option class="input mh-50 form-control" value="2"> Imagens 2 </option>
+                    <option class="input mh-50 form-control" value="3"> Imagens 3 </option>                    
+                    </select>
+                    <input class="btn btn-success mx-auto d-block col-12"type="submit" value="Calcular! ">
             </form>
         </div>
     </div>

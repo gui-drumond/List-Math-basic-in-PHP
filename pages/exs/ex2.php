@@ -28,19 +28,32 @@ session_start();
         <h1 class="display-2 text-dark">Bem-Vind@ aos Exercicios Salesianos</h1>
         <h4>Exercicios propostos pelo prof Daniel</h4>
     </div>
+    <div class="container">
+        <?php 
+        if(isset($_SESSION['resposta']))
+        {
+            echo $_SESSION['resposta']."<br/>";    
+            unset( $_SESSION['resposta']);                   
+        }
+        ?>
+    </div>
     <div class="container landing">
         <div class="home-wrap">
-            <form class="form-group display-4"action="../../calcs/calc_1.php" method="POST">
-                    Numero 1:   
-                    <input class="input form-control" name="n1" type="text">
-                    Numero 2:   
-                    <input class="input form-control" name="n2" type="text">
-                    <?php if(isset($_SESSION['resposta']))
-                    {
-                        echo "Resposta :".$_SESSION['resposta']."<br/>";    
-                        unset( $_SESSION['resposta']);                   
-                    }
-                    ?>
+            <form class="form-group display-4"action="../../calcs/calc_2.php" method="POST"> 
+                    Nome:
+                    <input class="input form-control" name="nome" type="text">
+                    Endereco:
+                    <input class="input form-control" name="end" type="text">
+                    Cep:
+                    <input class="input form-control" name="cep" type="text">
+                    Numero:
+                    <input class="input form-control" name="num" type="text">
+                    Bairro:
+                    <input class="input form-control" name="bairro" type="text">
+                    Telefone:
+                    <input class="input form-control" name="tel" type="text">
+                    Data:
+                    <input class="input form-control" name="data" type="date">
                     <input class="btn btn-success"type="submit" value="Calcular! ">
             </form>
         </div>
