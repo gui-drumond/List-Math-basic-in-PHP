@@ -1,9 +1,10 @@
 <?php 
-
+session_start();
 $lado = $_POST['lado'];
 $area = $lado * $lado;
 $dobro = $area * 2;
 
-echo "O dobro da area é: ".$dobro;
+$_SESSION['dobro']=$dobro;
+header("Location: ex05.php");
 
 ?>
