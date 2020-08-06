@@ -22,8 +22,8 @@
                                     <a href="#" class="nav-link dropdown-toggle mr-5" data-toggle="dropdown" role="button" id="navDropdown" aria-haspopup="false" aria-expanded="false">Qual Exercicio?</a>
                                     <div class="dropdown-menu bg-roxo-1 text-center" aria-labelledby="#navDropdown" style="border: none;">
                                         <a href="pages/exs/ex1.php" class="dropdown-item  text-dark font-weight-light "  id="navDropdownF" aria-haspopup="true" aria-expanded="false">ex1</a>
-                                        <a href="#" class="dropdown-item  text-dark  font-weight-light " id="navDropdownF" aria-haspopup="true" aria-expanded="false" >ex2</a>
-                                        <a href="#" class="dropdown-item  text-dark  font-weight-light " id="navDropdownM" aria-haspopup="true" aria-expanded="false">ex3</a>
+                                        <a href="pages/exs/ex2.php" class="dropdown-item  text-dark  font-weight-light " id="navDropdownF" aria-haspopup="true" aria-expanded="false" >ex2</a>
+                                        <a href="pages/exs/ex3.php" class="dropdown-item  text-dark  font-weight-light " id="navDropdownM" aria-haspopup="true" aria-expanded="false">ex3</a>
                                         <a href="#" class="dropdown-item  text-dark  font-weight-light " id="navDropdownM" aria-haspopup="true" aria-expanded="false">ex4</a>
                                         <a href="#" class="dropdown-item  text-dark  font-weight-light " id="navDropdownM" aria-haspopup="true" aria-expanded="false">ex5</a>
                                         <a href="#" class="dropdown-item  text-dark  font-weight-light " id="navDropdownM" aria-haspopup="true" aria-expanded="false">ex6</a>
